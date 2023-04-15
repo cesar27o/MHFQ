@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #014871, #D7EDE2;
+    font-family: 'Quicksand', sans-serif;
+    background: #014871;
+    overflow-x: hidden;
+}
+
+.logo {
+    animation: fill 0.5s ease forwards 3.5s;
+}
+
+.logo path:nth-child(1){
+    stroke-dasharray: 278;
+    stroke-dashoffset: 278;
+    animation: line-anim 2s ease forwards;
+}
+
+.logo path:nth-child(2){
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+.logo path:nth-child(3){
+    stroke-dasharray: 488;
+    stroke-dashoffset: 488;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+.logo path:nth-child(4){
+    stroke-dasharray: 412;
+    stroke-dashoffset: 412;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+.logo path:nth-child(5){
+    stroke-dasharray: 508;
+    stroke-dashoffset: 508;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+.logo path:nth-child(6){
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+.logo path:nth-child(7){
+    stroke-dasharray: 508;
+    stroke-dashoffset: 508;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+.logo path:nth-child(8){
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+.logo path:nth-child(9){
+    stroke-dasharray: 671;
+    stroke-dashoffset: 671;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+.logo path:nth-child(10){
+    stroke-dasharray: 439;
+    stroke-dashoffset: 439;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+.title{
+  padding-left: 1rem;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+ 
+  header{
+    background: none;
+   }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav h1 {
+    color: #ffff;
+  }
+
+  nav svg {
+    cursor: pointer;
+    z-index: 10;
+    padding-right: 10px;
+  }
+
+  .links {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+  }
+
+  .links a{
+    color: black;
+    font-size: 2rem;
+  }
+
+  .bio p,
+  .bio2 p{
+    font-size: 20px;
+  }
+
+  section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container,
+  .bio2 {
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 600px; 
+  }
+  
+  section h2{
+    font-size: 5rem;
+    color: black;
+  }  
+
+  .about{
+    background: linear-gradient(to right top, #53585b, #014871);
+  }
+
+  .projects{
+    background: linear-gradient(to left top, #014871, #53585b);
+  }
+
+  .contact{
+    background: linear-gradient(to right top, #53585b, #014871);
+  }
+
+  .contact, .about, .projects {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .contact h2 {
+    font-size: 40px;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .icon-container i {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .icon-container a:not(:first-child) {
+    margin-left: 12px;
+  }
+
+  @media (max-width: 477px) {
+
+    body{
+      overflow-x: hidden;
+    }
+
+    .logo {
+      transform: rotate(-90deg);
+      transform-origin: center center;
+      white-space: nowrap;
+      width: 375px; /* adjust width as needed */
+      height: 375px; /* adjust height as needed */
+      z-index: 0;
+      overflow-x: hidden;
+    }
+    
+    .links{
+      z-index: 1;
+    }
+
+    .title{
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+    .text-container,
+    .bio2 {
+      margin: 0 auto; 
+      max-width: 300px;
+    }
+
+    nav svg {
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    section .home{
+      overflow-x: hidden;
+    }
+  }
+  
+  
+  
+
+ 
+
+
+  
+
+  
+  
+
+
+  
+  
+  
+  
+
+
+  
+  
+ 
+
