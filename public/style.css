@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body{
     width: 100%;
     height: 100vh;
     background-color: #014871, #D7EDE2;
     font-family: 'Quicksand', sans-serif;
     background: #014871;
-    overflow-x: hidden;
 }
 
 .logo {
@@ -95,11 +98,6 @@ body{
     }
 }
 
- 
-  header{
-    background: none;
-   }
-
   nav{
     display: flex;
     align-items: center;
@@ -141,7 +139,7 @@ body{
   }
 
   section{
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,11 +205,7 @@ body{
   }
 
   @media (max-width: 477px) {
-
-    body{
-      overflow-x: hidden;
-    }
-
+    
     .logo {
       transform: rotate(-90deg);
       transform-origin: center center;
@@ -219,11 +213,14 @@ body{
       width: 375px; /* adjust width as needed */
       height: 375px; /* adjust height as needed */
       z-index: 0;
-      overflow-x: hidden;
     }
     
     .links{
       z-index: 1;
+    }
+
+    nav svg {
+      position: relative;
     }
 
     .title{
@@ -239,15 +236,7 @@ body{
       margin: 0 auto; 
       max-width: 300px;
     }
-
-    nav svg {
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    section .home{
-      overflow-x: hidden;
-    }
+    
   }
   
   
